@@ -3,7 +3,9 @@ require "yaml"
 require "pp"
 
 def load_library(path)
-  YAML.load_file(path)
+  ho = YAML.load_file(path)
+  pp ho
+  ho
 end
 
 def get_japanese_emoticon(path, ho)
