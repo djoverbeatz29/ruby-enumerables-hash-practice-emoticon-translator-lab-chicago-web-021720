@@ -10,7 +10,7 @@ def get_japanese_emoticon(path, ho)
   # code goes here
   reche = load_library(path)
   reche = reche.map{ |k, v| Hash[v[0], v[1]] }.inject(:merge)
-  reche[ho]
+  (reche[ho])? reche[ho] : "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(path, ho)
