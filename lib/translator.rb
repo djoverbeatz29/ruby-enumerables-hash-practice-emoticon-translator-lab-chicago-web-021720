@@ -28,3 +28,4 @@ reche.each{ |k, v|
   result[:get_emoticon][v[0]] = v[1].to_s
   result[:get_meaning][v[1]] = k.to_s
 }
+pp result
