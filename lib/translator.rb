@@ -22,4 +22,4 @@ def get_english_meaning(path, ho)
   reche[ho]
 end
 
-# puts get_japanese_emoticon("emoticons.yml", "O:)")
+pp load_library(path)
