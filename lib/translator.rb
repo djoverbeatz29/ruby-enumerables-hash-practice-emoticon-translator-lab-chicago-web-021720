@@ -3,7 +3,7 @@ require "yaml"
 require "pp"
 
 def load_library(path)
-  ho = YAML.load_file(path)
+  YAML.load_file(path)
 end
 
 def get_japanese_emoticon(path, ho)
@@ -21,3 +21,4 @@ def get_english_meaning(path, ho)
   reche.default = "Sorry, that emoticon was not found"
   reche[ho]
 end
+
