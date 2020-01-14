@@ -18,8 +18,4 @@ def get_english_meaning
   # code goes here
 end
 
-data = load_library("emoticons.yml")
-remapped = data.map{ |k, v| Hash[v[0], v[1]] }
-pp remapped
-
 puts get_japanese_emoticon("emoticons.yml", "O:)")
