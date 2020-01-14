@@ -22,9 +22,8 @@ end
 def get_english_meaning(path, ho)
   # code goes here
   reche = load_library(path)
-  reche = reche.map{ |k, v| Hash[v[1], k] }.inject(:merge)
   reche.default = "Sorry, that emoticon was not found"
-  reche[ho]
+  reche[:get_meaning][ho]
 end
 
 # reche = load_library("emoticons.yml")
