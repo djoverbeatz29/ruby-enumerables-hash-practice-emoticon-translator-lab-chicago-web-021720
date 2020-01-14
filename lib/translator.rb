@@ -26,5 +26,5 @@ reche = load_library("emoticons.yml")
 result = {:get_emoticon => {}, :get_meaning => {}}
 reche.each{ |k, v|
   result[:get_emoticon][v[0]] = v[1].to_s
-    result[:get_meaning][v[1]] = k.to_s
+  result[:get_meaning][v[1]] = k.to_s
 }
