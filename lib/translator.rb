@@ -9,6 +9,7 @@ def load_library(path)
     result[:get_emoticon][v[0]] = v[1].to_s
     result[:get_meaning][v[1]] = k.to_s
   }
+  result
 end
 
 def get_japanese_emoticon(path, ho)
