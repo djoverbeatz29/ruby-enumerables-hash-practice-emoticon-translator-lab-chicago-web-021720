@@ -18,7 +18,6 @@ def get_english_meaning(path, ho)
   reche = load_library(path)
   reche = reche.map{ |k, v| Hash[v[1], v[0]] }.inject(:merge)
   reche[ho]
-  # code goes here
 end
 
 # puts get_japanese_emoticon("emoticons.yml", "O:)")
