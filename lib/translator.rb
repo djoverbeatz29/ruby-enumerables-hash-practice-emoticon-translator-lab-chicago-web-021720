@@ -10,7 +10,6 @@ def get_japanese_emoticon(path, ho)
   # code goes here
   reche = load_library(path)
   reche = reche.map{ |k, v| Hash[v[0], v[1]] }.inject(:merge)
-  # reche = reche.inject(:merge)
   reche[ho]
 end
 
