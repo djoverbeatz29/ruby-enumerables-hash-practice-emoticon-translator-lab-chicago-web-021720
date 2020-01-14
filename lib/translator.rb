@@ -29,5 +29,4 @@ def get_english_meaning(path, ho)
 end
 
 reche = load_library("emoticons.yml")
-
-pp result
+pp reche
