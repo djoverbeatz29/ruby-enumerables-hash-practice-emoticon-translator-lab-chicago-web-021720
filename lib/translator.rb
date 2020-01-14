@@ -21,4 +21,4 @@ def get_english_meaning(path, ho)
   # code goes here
 end
 
-puts get_japanese_emoticon("emoticons.yml", "O:)")
+# puts get_japanese_emoticon("emoticons.yml", "O:)")
