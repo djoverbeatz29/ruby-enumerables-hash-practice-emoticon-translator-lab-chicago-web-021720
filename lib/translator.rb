@@ -21,9 +21,9 @@ end
 
 def get_english_meaning(path, ho)
   # code goes here
-  reche = load_library(path)
+  reche = load_library(path)[:get_meaning]
   reche.default = "Sorry, that emoticon was not found"
-  reche[:get_meaning][ho]
+  reche[ho]
 end
 
 # reche = load_library("emoticons.yml")
