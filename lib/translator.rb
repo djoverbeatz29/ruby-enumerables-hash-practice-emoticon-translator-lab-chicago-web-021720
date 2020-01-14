@@ -10,7 +10,11 @@ def get_japanese_emoticon(path, ho)
   # code goes here
   reche = load_library(path)
   reche = reche.map{ |k, v| Hash[v[0], v[1]] }
-  heche = 
+  
+  reche = reche.reduce({}) do |memo, (key, value)|
+    memo[key] = value
+    memo
+  end
   reche[ho]
 end
 
