@@ -22,3 +22,4 @@ def get_english_meaning(path, ho)
   reche[ho]
 end
 
+pp load_library("./lib/emoticons.yml")
