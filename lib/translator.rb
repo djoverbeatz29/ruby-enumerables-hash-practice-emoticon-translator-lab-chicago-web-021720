@@ -3,7 +3,12 @@ require "yaml"
 require "pp"
 
 def load_library(path)
-  YAML.load_file(path)
+  reche = YAML.load_file(path)
+  result = {:get_emoticon => {}, :get_meaning => {}}
+  reche.each{ |k, v|
+    result[:get_emoticon][v[0]] = v[1].to_s
+    result[:get_meaning][v[1]] = k.to_s
+  }
 end
 
 def get_japanese_emoticon(path, ho)
@@ -23,9 +28,5 @@ def get_english_meaning(path, ho)
 end
 
 reche = load_library("emoticons.yml")
-result = {:get_emoticon => {}, :get_meaning => {}}
-reche.each{ |k, v|
-  result[:get_emoticon][v[0]] = v[1].to_s
-  result[:get_meaning][v[1]] = k.to_s
-}
+
 pp result
