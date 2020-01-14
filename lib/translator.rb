@@ -21,5 +21,3 @@ def get_english_meaning(path, ho)
   reche.default = "Sorry, that emoticon was not found"
   reche[ho]
 end
-
-pp load_library(path)
