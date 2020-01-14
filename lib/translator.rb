@@ -14,9 +14,9 @@ end
 
 def get_japanese_emoticon(path, ho)
   # code goes here
-  reche = load_library(path)
+  reche = load_library(path)[:get_emoticon]
   reche.default = "Sorry, that emoticon was not found"
-  reche[:get_emoticon][ho]
+  reche[ho]
 end
 
 def get_english_meaning(path, ho)
